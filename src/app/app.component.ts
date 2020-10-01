@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
         this.users = res;
         this.selectedUser = this.users[0].id;
         this.makeApiCall(this.selectedFeature, this.selectedUser);
-      });
+      }) ;
     } catch (e) {
       console.error('Error occurred while getting users.', e);
     }
